@@ -34,7 +34,6 @@ function LetterPage() {
 
   return (
     <div className="letter-page">
-
       {/* 🌊 BUBBLES BACKGROUND */}
       <div className="bubbles">
         {Array.from({ length: 18 }).map((_, i) => (
@@ -49,7 +48,6 @@ function LetterPage() {
 
       {/* 💌 LETTER CARD */}
       <div className="letter">
-
         {/* 🌸 CAROUSEL */}
         <div className="carousel-frame">
           <div className="carousel">
@@ -57,11 +55,7 @@ function LetterPage() {
               ❮
             </button>
 
-            <img
-              src={images[index]}
-              alt="memory"
-              className="letter-image"
-            />
+            <img src={images[index]} alt="memory" className="letter-image" />
 
             <button className="nav right" onClick={nextSlide}>
               ❯
@@ -90,17 +84,21 @@ function LetterPage() {
           </p>
 
           <p>
-            You don’t say much, yet every small effort of yours stays with me. 💕
+            You don’t say much, yet every small effort of yours stays with me.
+            💕
           </p>
 
           <p>
-            In the simplest things you do, you make me feel seen, valued…
-            and gently cherished, more than you know. 💕
+            In the simplest things you do, you make me feel seen, valued… and
+            gently cherished, more than you know. 💕
+          </p>
+
+          <p style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+            Happy Birthday! Senior ❤️‍🩹
           </p>
 
           <p>- ton admirateur secret ❤️‍🩹</p>
         </div>
-
       </div>
     </div>
   );
