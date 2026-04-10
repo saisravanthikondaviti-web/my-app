@@ -1,0 +1,92 @@
+/* 🌫️ BACKGROUND (same mood as modal) */
+.home {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(circle at center, #2a0d16, #000);
+  overflow: hidden;
+}
+
+/* 🌫️ OVERLAY LIGHT */
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 70%);
+}
+
+/* 📜 LETTER CONTAINER */
+.letter-container {
+  position: relative;
+  z-index: 2;
+
+  width: 550px;
+  padding: 60px 40px;
+
+  text-align: center;
+
+  background: #fffaf5;
+  border-radius: 6px;
+
+  /* paper texture */
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.7),
+    inset 0 0 40px rgba(0,0,0,0.08);
+
+  animation: dropIn 1s ease;
+}
+
+/* ✍️ TITLE */
+.title {
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+  color: #5a1e2d;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* ✍️ SUBTITLE */
+.subtitle {
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  color: #7a3b4a;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* 💌 ENVELOPE AREA */
+.envelope-area {
+  display: flex;
+  justify-content: center;
+
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 🌸 FLOAT */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* 🎬 DROP ANIMATION */
+@keyframes dropIn {
+  0% {
+    transform: translateY(-150px) rotate(-5deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(20px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+}
